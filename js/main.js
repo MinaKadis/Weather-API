@@ -13,6 +13,14 @@ findBtn.addEventListener('click', (eventInfo) => {
   startAPi(country, lang);
 });
 
+function getWeather() {
+  debugger;
+  country = location_field.value.trim().toLowerCase();
+  if (country === '')
+    country = 'cairo' //default, in case of empty field
+  startAPi(country, lang);
+}
+
 for (let i = 0; i < lang_btns.length; i++) {
   lang_btns[i].addEventListener('click', (eventInfo) => {
     lang = eventInfo.target.getAttribute('data-lang');
