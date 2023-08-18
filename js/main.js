@@ -40,7 +40,7 @@ for (let i = 0; i < lang_btns.length; i++) {
 let allItems = [];
 startAPi(country, lang);
 async function startAPi(country, lang) {
-  let responseAPI = await fetch(` https://api.weatherapi.com/v1/forecast.json?key=65d16090ab2947379d5200814230308%20&q=${country}&days=3&lang=${lang}`);
+  let responseAPI = await fetch(` https://api.weatherapi.com/v1/forecast.json?key=186cb37da6ab4f94848130640231808&q=${country}&days=3&lang=${lang}`);
   allItems = await responseAPI.json();
   // console.log(allItems)
   getData();
